@@ -2,3 +2,10 @@ html, body {
     margin: 0;
     padding 0;   
 }
+body {
+    background-image: url("http://hbfile.b0.upaiyun.com/img/home/banner/479fb56e2a86dd125d786e0586eacdffa51c015f109f75");
+}
+div {
+    text-align: center;
+    font-size: 60px;  
+}
