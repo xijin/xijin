@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
-    padding 0;   
+    padding 0;
+    background-image: url('https://github.com/xijin/xijin.github.io/blob/master/homepage.png'); 
 }
 body {
     height: 1000px;
