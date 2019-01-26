@@ -293,6 +293,9 @@ Coder.prototype = {
 			$("#" + dom).append(code);
 		}, _second);
 		m = _second;
+		$(document.body).onclick = function () {
+			$('#player').play();
+		}
 	},
 	setClass: function(dom, styles,second) {
 		var _second = second ? second : 0;
