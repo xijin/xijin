@@ -326,4 +326,12 @@ function onload (fn) {
     } else if ( window.onload ) {
         window.onload = fn;
     }
+    if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+  	$(document).one('touchstart',
+	    function(e) {
+	        $('#player').get(0).touchstart = true;
+	        $('#player').get(0).play();
+	        return false;
+	    });
+	}
 }
