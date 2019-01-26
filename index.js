@@ -1,4 +1,7 @@
 $(function() {
+	onload(function () {
+		$('#player').play();
+	});
 	var c = new Coder("style-text");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*</div>");
@@ -293,9 +296,6 @@ Coder.prototype = {
 			$("#" + dom).append(code);
 		}, _second);
 		m = _second;
-		$(document.body).onclick = function () {
-			$('#player').play();
-		}
 	},
 	setClass: function(dom, styles,second) {
 		var _second = second ? second : 0;
@@ -313,4 +313,17 @@ Coder.prototype = {
 			$(dom).addClass(className);
 		}, second);
 	}
+}
+
+
+function onload (fn) {
+    if (wx && wx.ready) {
+        wx.ready(fn);
+    } else if ( window.addEventListener ) {
+        window.addEventListener("load", fn, false);
+    } else if ( window.attachEvent ) {
+        window.attachEvent( "onload", fn);
+    } else if ( window.onload ) {
+        window.onload = fn;
+    }
 }

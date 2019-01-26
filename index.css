@@ -1,6 +1,12 @@
 * {
   -webkit-transition: all 1s;
 }
+html {
+    font-size: 100px!important;
+}
+body {
+    font-size: .14rem;
+}
 .selector {
 	color: #E69F0F;
 }
