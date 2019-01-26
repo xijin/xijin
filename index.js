@@ -5,9 +5,12 @@ $(function() {
 	var c = new Coder("style-text");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*欢迎你，我的朋友。我叫赵子成，是个还算年轻的菜鸟前端</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*后面加个君字，并非妄自尊称，纯属卖萌o(￣▽￣)d</div>",2000);
-	c.load("<div class='bef_comment writecode'>&nbsp;*让我们来点实际的，看看我能做些什么</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*hi，吃货or宝宝也</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*你的小詹已上线</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*从今天开始</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*吃货与小詹的爱的小站就正式成立了，o(￣▽￣)d</div>",2000);
+	c.load("<div class='bef_comment writecode'>&nbsp;*现在是<strong> " + format() + "</strong></div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*让我们来点实际的，看看小站能做点什么</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*让我们开始吧,我们先来让所有的变化都以动画的效果来显示</div>");
@@ -18,7 +21,7 @@ $(function() {
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*看起来似乎没什么变化，不要着急，接下来你就会看到</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*你是不是厌倦了白底黑字</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*那么让我们来做一些改变</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*那么让我来做一些改变</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='code writecode'><span class='bef_selector'>html</span> {</div>");
 	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>background</span>: <span class='bef_value'>rgb(63, 82, 99)</span>;</div>");
@@ -28,7 +31,7 @@ $(function() {
 	}]);
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*稍等，我们来改变一下字体的颜色</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*稍等，我来改变一下字体的颜色</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='code writecode'><span class='bef_selector'>pre,a</span> {</div>");
 	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>color</span>: <span class='bef_value'>white</span>;</div>");
@@ -101,8 +104,8 @@ $(function() {
 	}]);
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*OK，现在让我们来换一下位置</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*让我们准备来再做一些改变</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*OK，现在让我来换一下位置</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*让我准备来再做一些改变</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='code writecode'><span class='bef_selector'>#style-text</span> {</div>");
   	c.load("<div class='code writecode'>&nbsp;<span class='bef_key'>-webkit-transform</span>: <span class='bef_value'>translateX(95%)</span>;</div>");
@@ -118,7 +121,7 @@ $(function() {
 	c.load("<div class='code writecode'>}</div></p>");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*现在看起来好多了，但是所有的文字颜色都是白色的</div>");
-	c.load("<div class='bef_comment writecode'>&nbsp;*让我们来让他的可读性更好一点吧</div>");
+	c.load("<div class='bef_comment writecode'>&nbsp;*让我来让他的可读性更好一点吧</div>");
 	c.load("<div class='bef_comment writecode'>&nbsp;*/</div></p>");
 	c.load("<p><div class='code writecode'><span class='bef_selector'>.comment</span>&nbsp;{ <span class='bef_key'>color</span>: <span class='bef_value'>#857F6B</span>; <span class='bef_key'>font-style</span>: <span class='bef_value'>italic</span>; }</div>");
 	c.addClass(".bef_comment","comment");
@@ -160,7 +163,7 @@ $(function() {
 	}]);
   	c.load("<div class='code writecode'>}</div></p>");
   	c.load("<p><div class='comment writecode'>/**</div>");
-	c.load("<div class='comment writecode'>&nbsp;*现在我们差不多可以开始写我的简历了</div>");
+	c.load("<div class='comment writecode'>&nbsp;*现在我们差不多可以开始筑建我们爱的小站了</div>");
 	c.load("<div class='comment writecode'>&nbsp;*我相信你来这不只是为了看这些漂亮的颜色</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
 	c.addClass("#work-text","pre_work-text");
@@ -226,10 +229,16 @@ $(function() {
 	c.setClass("#work-text", [{
 		"name": "-webkit-transform",
 		"val": "rotateX(0deg) rotateY(190deg) rotateZ(180deg)"
+	}, {
+		"name": "overflow",
+		"val": "auto"
 	}]);
 	c.setClass("#work-text #md", [{
 		"name": "-webkit-transform",
 		"val": "rotateY(190deg) rotateZ(180deg)"
+	}, {
+		"name": "overflow",
+		"val": "auto"
 	}]);
 	c.load("<p><div class='comment writecode'>/**</div>");
 	c.load("<div class='comment writecode'>&nbsp;*对于文本，我们可以再做一点微调</div>");
@@ -289,7 +298,7 @@ Coder.prototype = {
 	load: function(code, second) {
 		var dom = this._dom;
 		var o = this;
-		var _second = second ? second : 1000;
+		var _second = second ? second : 2000;
 		_second = m + _second;
 		setTimeout(function() {
 			$('#' + dom).scrollTop( $('#' + dom)[0].scrollHeight );
@@ -334,4 +343,31 @@ function onload (fn) {
 	        return false;
 	    });
 	}
+}
+
+
+
+function format(date, format) {
+	date = new Date();
+	format = 'yyyy年MM月dd日 h时m分s秒';
+    var map = {
+        "M+": date.getMonth() + 1,
+        "d+": date.getDate(),
+        "h+": date.getHours(),
+        "m+": date.getMinutes(),
+        "s+": date.getSeconds(),
+        "q+": Math.floor((date.getMonth() + 3) / 3),
+        "S+": date.getMilliseconds()
+    };
+    if (/(y+)/i.test(format)) {
+        format = format.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
+    }
+    for (var k in map) {
+        if (new RegExp("(" + k + ")").test(format)) {
+            format = format.replace(RegExp.$1, RegExp.$1.length == 1 ?
+                map[k] : ("00" + map[k]).substr(("" + map[k]).length));
+        }
+    }
+    console.log(format);
+    return format;
 }

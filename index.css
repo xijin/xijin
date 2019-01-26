@@ -49,7 +49,7 @@ body {
 }
 
 .writecode {
-	overflow: hidden;
+	overflow: auto;
 	white-space: nowrap;
 	animation: coder 2s;
 	-webkit-animation: coder 2s;
