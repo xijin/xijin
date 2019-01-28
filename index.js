@@ -277,6 +277,12 @@ $(function() {
 	c.load("<div class='comment writecode'>&nbsp;*汪小姐</div>");
 	c.load("<div class='comment writecode'>&nbsp;*余生请多指教</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
+	c.next(function () {
+		var el = $('#player').get(0);
+		el.pause();
+		el.src = './love.mp3';
+		el.play();
+	});
 
 });
 
@@ -314,6 +320,9 @@ Coder.prototype = {
 		setTimeout(function() {
 			$(dom).addClass(className);
 		}, second);
+	},
+	next: function (fn, timeout) {
+		setTimeout(fn, m + (timeout || 2000));
 	}
 }
 
