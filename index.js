@@ -282,6 +282,12 @@ $(function() {
 	c.load("<div class='comment writecode'>&nbsp;*汪小姐</div>");
 	c.load("<div class='comment writecode'>&nbsp;*余生请多指教</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
+	c.next(function () {
+		c.setClass('.firework-grp', [{
+			"name": 'display',
+			"val": 'block'
+		}]);
+	})
 });
 
 var m = 0;
@@ -295,7 +301,7 @@ Coder.prototype = {
 	load: function(code, second) {
 		var dom = this._dom;
 		var o = this;
-		var _second = second ? second : 2000;
+		var _second = second ? second : 1000;
 		_second = m + _second;
 		setTimeout(function() {
 			$('#' + dom).scrollTop( $('#' + dom)[0].scrollHeight );
@@ -320,7 +326,7 @@ Coder.prototype = {
 		}, second);
 	},
 	next: function (fn, timeout) {
-		setTimeout(fn, m + (timeout || 2000));
+		setTimeout(fn, m + (timeout || 1000));
 	}
 }
 
