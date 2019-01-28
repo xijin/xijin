@@ -192,7 +192,7 @@ $(function() {
 	w.load("<li class='writecode'>17年2月25日于恩施女儿城</li>");
 	w.load("<li class='writecode'>17年7月21日于赛里木湖畔、巴音布鲁克草原上</li>");
 	w.load("<li class='writecode'>17年8月26日于岳麓山下、喜见太平</li>");
-	w.load("<li class='writecode'>17年10月11日，秘言有好事想告</li>");
+	w.load("<li class='writecode'>17年10月11日，秘言有好事相告</li>");
 	w.load("<li class='writecode'>惊喜原是——放弃西西弗工作，来武汉</li>");
 	w.load("<li class='writecode'>莫大感动！从此金风玉露，足迹遍布江城</li>");
 	w.load("</ul>");
