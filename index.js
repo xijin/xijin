@@ -1,6 +1,11 @@
 $(function() {
 	onload(function () {
-		$('#player').play();
+		var el = $('#player').get(0);
+		el.play();
+		el.onended = function () {
+			el.src = './love.mp3';
+			el.play();
+		}
 	});
 	var c = new Coder("style-text");
 	c.load("<p><div class='bef_comment writecode'>/**</div>");
@@ -277,13 +282,6 @@ $(function() {
 	c.load("<div class='comment writecode'>&nbsp;*汪小姐</div>");
 	c.load("<div class='comment writecode'>&nbsp;*余生请多指教</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
-	c.next(function () {
-		var el = $('#player').get(0);
-		el.pause();
-		el.src = './love.mp3';
-		el.play();
-	});
-
 });
 
 var m = 0;
@@ -328,9 +326,7 @@ Coder.prototype = {
 
 
 function onload (fn) {
-    if (wx && wx.ready) {
-        wx.ready(fn);
-    } else if ( window.addEventListener ) {
+    if ( window.addEventListener ) {
         window.addEventListener("load", fn, false);
     } else if ( window.attachEvent ) {
         window.attachEvent( "onload", fn);
