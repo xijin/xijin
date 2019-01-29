@@ -8,68 +8,78 @@ body {
     font-size: .14rem;
 }
 .selector {
-	color: #E69F0F;
+    color: #E69F0F;
 }
 
 .comment {
-	color: #857F6B;
-	font-style: italic;
+    color: #857F6B;
+    font-style: italic;
 }
 
 .key {
-	color: #64D5EA;
+    color: #64D5EA;
 }
 
 .value {
-	color: #BE84F2;
+    color: #BE84F2;
 }
 
 .pre_work-text {
-	overflow: hidden;
-	background: rgb(48, 48, 48);
-	border: 1px solid #ccc;
-	max-height: 94.5%;
-	width: 49%;
-	font-size: 14px;
-	font-family: monospace;
-	padding: 10px 10px 20px;
-	box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
-	white-space: pre-wrap;
-	outline: 0;
-	-webkit-transform:rotateY(10deg);
-	-webkit-transform-origin: left;
+    overflow: hidden;
+    background: rgb(48, 48, 48);
+    border: 1px solid #ccc;
+    max-height: 94.5%;
+    width: 49%;
+    font-size: 14px;
+    font-family: monospace;
+    padding: 10px 10px 20px;
+    -webkit-box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: -4px 4px 2px 0 rgba(0, 0, 0, 0.3);
+    white-space: pre-wrap;
+    outline: 0;
+    -webkit-transform:rotateY(10deg);
+    -webkit-transform-origin: left;
 }
 
-	.pre_work-text a{
-		color:white;
-	}
+.pre_work-text a {
+    color:white;
+}
 
 .px {
-	color: #F92772;
+    color: #F92772;
 }
 
 .writecode {
-	overflow: hidden;
-	white-space: nowrap;
-	animation: coder 2s;
-	-webkit-animation: coder 2s;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: coder 2s;
+    -webkit-animation: coder 2s;
+}
+
+@-webkit-keyframes coder {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes coder {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 #content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 20px;
 }
 
 /*定义滚动条样式*/
@@ -107,12 +117,16 @@ body {
     color: #535396;
 }
 .firework-grp2{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
     color: #2C1C44;
     z-index: 6;
 }
 .firework-grp3{
-    transform: rotate(-75deg);
+    -webkit-transform: rotate(-75deg);
+        -ms-transform: rotate(-75deg);
+            transform: rotate(-75deg);
     color: #E339BD;
     z-index: 7;
 }
@@ -127,22 +141,34 @@ body {
 /* SIZES
 ------------------------------------*/
 .size05 {
-    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
 }
 .size08 {
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
 }
 .size13 {
-    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
 }
 .size15 {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 }
 .size18 {
-    transform: scale(1.8);
+    -webkit-transform: scale(1.8);
+        -ms-transform: scale(1.8);
+            transform: scale(1.8);
 }
 .size20 {
-    transform: scale(2);
+    -webkit-transform: scale(2);
+        -ms-transform: scale(2);
+            transform: scale(2);
 }
 
 /* POSITION
@@ -195,7 +221,9 @@ body {
     width: 8.5em;
     height: 8.5em;
     position: absolute;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .drop {
     display: block;
@@ -227,139 +255,255 @@ body {
 .drop-1 {
     left:3.75em;
     top: 0;
-    animation: drop1anim 1s ease-in-out infinite;
+    -webkit-animation: drop1anim 1s ease-in-out infinite;
+            animation: drop1anim 1s ease-in-out infinite;
 }
 .drop-2 {
     top: 3.25em;
     right: 0;
-    animation: drop2anim 1s ease-in-out infinite;
+    -webkit-animation: drop2anim 1s ease-in-out infinite;
+            animation: drop2anim 1s ease-in-out infinite;
 }
 .drop-3 {
     left:3.75em;
     bottom: 0;
-    animation: drop3anim 1s ease-in-out infinite;
+    -webkit-animation: drop3anim 1s ease-in-out infinite;
+            animation: drop3anim 1s ease-in-out infinite;
 }
 .drop-4 {
     top: 3.25em;
     left: 0;
-    animation: drop4anim 1s ease-in-out infinite;
+    -webkit-animation: drop4anim 1s ease-in-out infinite;
+            animation: drop4anim 1s ease-in-out infinite;
 }
 .firework-2 .drop-1 {
-    animation-delay: 0.5s
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s
 }
 .firework-2 .drop-2 {
-    animation-delay: 0.5s
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s
 }
 .firework-2 .drop-3 {
-    animation-delay: 0.5s
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s
 }
 .firework-2 .drop-4 {
-    animation-delay: 0.5s
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s
 }
 
 /* FIREWORK DELAY
 ------------------------------------*/
 .delay1 .drop-1 {
-    animation-delay: 0.25s
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s
 }
 .delay1 .drop-2 {
-    animation-delay: 0.25s
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s
 }
 .delay1 .drop-3 {
-    animation-delay: 0.25s
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s
 }
 .delay1 .drop-4 {
-    animation-delay: 0.25s
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s
 }
 
 .delay2 .drop-1 {
-    animation-delay: 0.75s
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s
 }
 .delay2 .drop-2 {
-    animation-delay: 0.75s
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s
 }
 .delay2 .drop-3 {
-    animation-delay: 0.75s
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s
 }
 .delay2 .drop-4 {
-    animation-delay: 0.75s
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s
 }
 
 /* keyframes
 ------------------------------------*/
-@keyframes drop1anim {
+@-webkit-keyframes drop1anim {
     0% {
         top:3.25em;
         opacity: 0;
-        transform: scale(0.3);
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
     }
     25% {
         opacity: 0;
     }
     50% {
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
     100% {
         top: -0.75em;
         opacity: 0;
-        transform: scale(0.3);
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
+    }
+}
+@keyframes drop1anim {
+    0% {
+        top:3.25em;
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100% {
+        top: -0.75em;
+        opacity: 0;
+        -webkit-transform: scale(0.3);
+                transform: scale(0.3);
+    }
+}
+@-webkit-keyframes drop2anim {
+    0% {
+        right:3.75em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(90deg);
+                transform: scale(0.3) rotate(90deg);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(90deg);
+                transform: scale(1) rotate(90deg);
+    }
+    100% {
+        right: -0.25em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(90deg);
+                transform: scale(0.3) rotate(90deg);
     }
 }
 @keyframes drop2anim {
     0% {
         right:3.75em;
         opacity: 0;
-        transform: scale(0.3) rotate(90deg);
+        -webkit-transform: scale(0.3) rotate(90deg);
+                transform: scale(0.3) rotate(90deg);
     }
     25% {
         opacity: 0;
     }
     50% {
         opacity: 1;
-        transform: scale(1) rotate(90deg);
+        -webkit-transform: scale(1) rotate(90deg);
+                transform: scale(1) rotate(90deg);
     }
     100% {
         right: -0.25em;
         opacity: 0;
-        transform: scale(0.3) rotate(90deg);
+        -webkit-transform: scale(0.3) rotate(90deg);
+                transform: scale(0.3) rotate(90deg);
+    }
+}
+@-webkit-keyframes drop3anim {
+    0% {
+        bottom:3.25em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(180deg);
+                transform: scale(0.3) rotate(180deg);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(180deg);
+                transform: scale(1) rotate(180deg);
+    }
+    100% {
+        bottom: -0.75em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(180deg);
+                transform: scale(0.3) rotate(180deg);
     }
 }
 @keyframes drop3anim {
     0% {
         bottom:3.25em;
         opacity: 0;
-        transform: scale(0.3) rotate(180deg);
+        -webkit-transform: scale(0.3) rotate(180deg);
+                transform: scale(0.3) rotate(180deg);
     }
     25% {
         opacity: 0;
     }
     50% {
         opacity: 1;
-        transform: scale(1) rotate(180deg);
+        -webkit-transform: scale(1) rotate(180deg);
+                transform: scale(1) rotate(180deg);
     }
     100% {
         bottom: -0.75em;
         opacity: 0;
-        transform: scale(0.3) rotate(180deg);
+        -webkit-transform: scale(0.3) rotate(180deg);
+                transform: scale(0.3) rotate(180deg);
+    }
+}
+@-webkit-keyframes drop4anim {
+    0% {
+        left:3.75em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(-90deg);
+                transform: scale(0.3) rotate(-90deg);
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(-90deg);
+                transform: scale(1) rotate(-90deg);
+    }
+    100% {
+        left: -0.25em;
+        opacity: 0;
+        -webkit-transform: scale(0.3) rotate(-90deg);
+                transform: scale(0.3) rotate(-90deg);
     }
 }
 @keyframes drop4anim {
     0% {
         left:3.75em;
         opacity: 0;
-        transform: scale(0.3) rotate(-90deg);
+        -webkit-transform: scale(0.3) rotate(-90deg);
+                transform: scale(0.3) rotate(-90deg);
     }
     25% {
         opacity: 0;
     }
     50% {
         opacity: 1;
-        transform: scale(1) rotate(-90deg);
+        -webkit-transform: scale(1) rotate(-90deg);
+                transform: scale(1) rotate(-90deg);
     }
     100% {
         left: -0.25em;
         opacity: 0;
-        transform: scale(0.3) rotate(-90deg);
+        -webkit-transform: scale(0.3) rotate(-90deg);
+                transform: scale(0.3) rotate(-90deg);
     }
 }

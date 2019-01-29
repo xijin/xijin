@@ -282,12 +282,11 @@ $(function() {
 	c.load("<div class='comment writecode'>&nbsp;*汪小姐</div>");
 	c.load("<div class='comment writecode'>&nbsp;*余生请多指教</div>");
 	c.load("<div class='comment writecode'>&nbsp;*/</div></p>");
-	c.next(function () {
-		c.setClass('.firework-grp', [{
-			"name": 'display',
-			"val": 'block'
-		}]);
-	})
+	c.setClass('.firework-grp', [{
+		"name": 'display',
+		"val": 'block'
+	}]);
+
 });
 
 var m = 0;
